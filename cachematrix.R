@@ -1,10 +1,10 @@
 ## This R function is able to cache potentially time-consuming inverse matrix computations.
 
-## The first function, `makeCacheMatrix` creates a  vector list containing a function to 
-## 1. set the value of the matrix
-## 2. get the value of the matrix
-## 3. set the value of the inverse matrix
-## 4. get the value of the inverse matrix
+## The first function, "makeCacheMatrix" creates a  vector list containing a function to 
+## 1: set the value of the matrix
+## 2: get the value of the matrix
+## 3: set the value of the inverse matrix
+## 4: get the value of the inverse matrix
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -35,4 +35,4 @@ cacheSolve <- function(x, ...) {
     x$setinverse(minv)
     minv   #returns inverse
 }
-
+##
